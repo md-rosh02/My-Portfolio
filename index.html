@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+</head>
+<link rel="stylesheet" href="new.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+<style>
+  body {
+    font-family: "Audiowide", cursive;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  header{
+    width: 100%;
+    height: 15vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .first {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    letter-spacing: 2px;
+  }
+
+  .first p {
+    width: 200px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 315px;
+    margin-left: 930px;
+    color: rgb(255, 0, 0);
+  }
+
+  .first h1 {
+    position: fixed;
+    font-family: "Audiowide", cursive;
+    float: left;
+    margin: -22px 10px;
+    font-size: 35px;
+    color: #ffffff;
+  }
+
+  .first h1:hover {
+    cursor: pointer;
+    color: rgb(254, 1, 1);
+  }
+
+  .second ul {
+list-style: none;
+overflow: hidden;
+color: white;
+padding: 0;
+text-align: center;
+margin: 0;
+transition: 1s
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+  }
+  a:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+  }
+
+  a::after {
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::after {
+    transform: scale(1, 1);
+    
+  }
+
+  .third input {
+    color: #ffffff;
+    font-family: "Audiowide", cursive;
+    border: 2px solid rgb(255, 1, 1);
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 13px;
+    border-radius: 15px;
+    width: 90px;
+    height: 32px;
+    background-color: rgb(47, 218, 224);
+    background-color: transparent;
+  }
+
+  .third input:hover {
+    background-color: rgb(244, 62, 62);
+    cursor: pointer;
+    transform: translateY(1px);
+  }
+
+  nav{
+    position: fixed;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: black;
+  }
+  nav.black ul{
+    background-color: black;
+  }
+   nav ul li{
+    display: inline-block ;
+    padding: 20px;
+    background-color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+   }
+
+  .statement {
+    color: rgb(255, 255, 255);
+    font-family: "Josefin Sans", sans-serif;
+    position: absolute;
+    height: 200px;
+    margin-top: 330px;
+    margin-left: 950px;
+    width: 450px;
+    font-size: 30px;
+  }
+
+  .state h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-top: 250px;
+    margin-left: 950px;
+    color: rgb(255, 252, 252);
+  }
+
+  .state p{
+    width: 200px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+  }
+  span {
+    color: red;
+  }
+  span:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .second li span {
+    color: rgb(255, 250, 250);
+  }
+
+  img {
+    width: 700px;
+    margin-left: 140px;
+    border-radius: 0px;
+    margin-top: -400px;
+    border-style: groove;
+    box-shadow: 20px 10px 5px 12px rgb(24, 24, 24);
+    border-color: black;
+  }
+  img:hover {
+    color: transparent;
+    cursor: pointer;
+    transform: translateY(8px);
+  }
+
+  .Secondpage h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .Secondpage p {
+    color: white;
+    width: 580px;
+    margin-top: 60px;
+    margin-left: 850px;
+  }
+
+  .Secondpage details {
+    color: #ffffff;
+    width: 580px;
+    margin-left: 850px;
+  }
+
+  .Sec p {
+    color: #ffffff;
+  }
+
+  section img {
+    width: 550px;
+    height: 400px;
+    margin-top: -320px;
+    margin-left: 100px;
+    border-color: black;
+  }
+
+  .myservice h1 {
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 580px;
+    font-size: 50px;
+  }
+
+  .myservice p {
+    color: #ffffff;
+    border: 2px solid white;
+    display: inline-block;
+    width: 260px;
+    height: 220px;
+    padding: 65px;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .myservice p:hover {
+    background-color: rgb(255, 0, 0);
+    transform: translateY(10px);
+    cursor: pointer;
+  }
+
+  .para p {
+    margin: 45px 40px 20px 60px;
+  }
+
+  .last h1 {
+    color: #ffffff;
+    margin-left: 50px;
+    font-size: 50px;
+  }
+
+  .sym a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    left: 50px;
+    padding: 10px;
+    margin: 6px;
+  }
+  .last p {
+    color: #ffffff;
+    margin-left: 75px;
+    letter-spacing: 1px;
+  }
+
+  .last i {
+    left: 40px;
+    letter-spacing: 1px;
+    margin-left: 60px;
+    padding: 10px 4px;
+  }
+
+  .feedback form {
+    margin-top: -100px;
+    margin-left: 780px;
+    padding: 10px;
+  }
+</style>
+<body>
+  
+  <header id="fir">
+    <nav>
+      
+      <div class="first">
+        <h1><span>R</span>oshan<span>.</span></h1>
+      </div> 
+      <div class="second">
+        <ul>
+          <li><a href="#fir" >H<span>o</span>me</a></li>
+          <li>
+            <a href="#About" >A<span>b</span>out</a>
+          </li>
+          <li>
+            <a href="#Projects">P<span>r</span>ojects</a>
+          </li>
+          <li>
+            <a href="#Contact">C<span>o</span>ntact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="third">
+        <input onclick="pro1.html" type="button" value="Sign in"/>
+      </div>
+    </nav>
+  </header>
+  <div class="state">
+    <h1><p>CSE Student</p>
+      Hi, I'm <span>M</span>ohammed <span>R</span>oshan <span>U</span>rf
+      <span>A</span>jeez
+      <p>From India</p>
+    </h1>
+  </div>
+
+  <div class="statement">
+  </div>
+  <img
+    src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+    alt="" srcset="" width="500px" />
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr>
+  <h6  id="About" >none</h6>
+  <br />
+  <br />
+  <br />
+  <div class="Secondpage">
+    <h1><span>A</span>bout <span>M</span>e</h1>
+    <p>
+      I'm a Computer Science and Engineering student with a passion for
+      developing innovative solutions. I have a strong foundation in
+      programming and technology, with expertise in languages such as C and
+      C++. I am constantly seeking out opportunities to learn and grow my
+      skills, whether it's through coursework or personal projects.
+    </p>
+    <p>
+      As a detail-oriented and driven individual, I am always striving to
+      exceed expectations. I thrive in collaborative environments where I can
+      contribute my analytical and problem-solving skills to help the team
+      achieve its goals. My ability to work well under pressure and meet
+      deadlines has enabled me to deliver quality code consistently.
+    </p>
+    <section>
+      <img
+        src="https://media.istockphoto.com/id/519165604/photo/hooded-hacker-in-dark.jpg?s=612x612&w=0&k=20&c=UHun-V5ugdeohShLYhJHh4PsLhptgvJ9Wxt2PcYRtgs="
+        alt="" srcset="" />
+    </section>
+
+    <div class="skills">
+      <details class="fir">
+        <summary>My Skills🤩</summary>
+        <ul>
+          <li>C</li>
+          <li>C++(DSA)</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="Sec">
+        <summary>Education</summary>
+        <br />
+        <span>2021 - Processing</span>
+        <br />
+        In the process of completing a Bachelor of Computer Science &
+        Engineering (B.E.) degree.
+        <br />
+        <br />
+        <span>2019 - 20</span>
+        <br />
+        Shree Chennabasaveshwar PU College,Income Tax Department
+        Opposite,Hubli-Dharwad
+        <br />
+        <br />
+        <span>2019</span>
+        <br />
+        St.Mary's High School,Hubli
+      </details>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <hr>
+  <h6 id="Projects" >none</h6>
+  <br />
+  <br />
+  <br />
+  <div   class="myservice">
+    <h1><span>M</span>y <span>P</span>rojects</h1>
+    <div class="para">
+      <p class="ex1">No Service!!!</p>
+      <p class="ex1">No Service!!!</p>
+      <p class="ex1">No Service!!!</p>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <div id="Contact" class="last">
+    <h1><span>C</span>ontact <span>M</span>e</h1>
+    <i class="fa fa-envelope" style="font-size: 20px; color: red">
+      mohammedajeez2004@gmail.com</i>
+    <br />
+    <i class="fa fa-phone" style="font-size: 20px; color: red"> 9880236513</i>
+  </div>
+  <div class="sym">
+    <a href="https://twitter.com/md_roshan02" target="_blank" class="fa fa-twitter" style="color: #ff1e1e"></a>
+    <a href="https://www.instagram.com/_iam_rosh/" target="_blank" class="fa fa-instagram" style="color: #ff1e1e"></a>
+    <a href="https://www.linkedin.com/in/mohammed-roshan02/" target="_blank" class="fa fa-linkedin"
+      style="color: #ff1e1e"></a>
+    <a href="https://github.com/md-rosh02" target="_blank" class="fa fa-github" style="color: #ff1e1e"></a>
+  </div>
+
+  <br /> 
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script>
+    $(window).scroll(function(){
+      if($(window).scrollTop()){
+        $("nav").addClass("black");
+      }else{
+        $("nav").removeClass("black");
+      }
+    });
+  </script>
+</body>
+
+</html>
